@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueueLess – Smart Queue App</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">
+            <img src="app.jpg" alt="QueueLess Logo">
+            <h1>QueueLess</h1>
+        </div>
+
+        <nav>
+            <div class="hamburger">&#9776;</div>
+<ul class="menu">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how">About us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+        </nav>
+    </header>
+<script>
+$(document).ready(function(){
+    $(".hamburger").click(function(){
+        $(".menu").slideToggle(); // toggles menu display
+    });
+});
+</script>
+
+<section id="hero" class="hero">
+    <h2>Skip the Line. Save Time.</h2>
+    <p class="sub-text">Join queues from your phone instantly.</p>
+</section>
+
+<section id="features" class="features">
+    <div class="feature-box" style="background: #ffd6d6;"> <!-- soft red -->
+        <h3>Digital Token System</h3>
+    </div>
+
+    <div class="feature-box" style="background: #d6eaff;"> <!-- soft blue -->
+        <h3>Queue History</h3>
+    </div>
+
+    <div class="feature-box" style="background: #d6ffd8;"> <!-- soft green -->
+        <h3>Service Availability</h3>
+    </div>
+
+    <div class="feature-box" style="background: #fff3d6;"> <!-- soft orange -->
+        <h3>Fee Payment Queue</h3>
+    </div>
+</section>
+<section id="services" class="section services">
+    <h2 class="section-title">Supported Counters</h2>
+
+    <div class="carousel">
+        <button class="carousel-btn left">&#10094;</button>
+
+        <div class="carousel-track">
+            <div class="carousel-item">Library</div>
+            <div class="carousel-item">Administration</div>
+            <div class="carousel-item">Accounts & Finance</div>
+            <div class="carousel-item">Cafeteria</div>
+            <div class="carousel-item">Exam Department</div>
+            <div class="carousel-item">IT Helpdesk</div>
+        </div>
+
+        <button class="carousel-btn right">&#10095;</button>
+    </div>
+</section>
+<footer class="footer">
+    © 2025 Queueless | Designed with ❤️
+</footer>
+</body>
+</html>
+
